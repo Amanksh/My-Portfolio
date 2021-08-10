@@ -1,0 +1,414 @@
+// /IMPORTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+// 	Variables
+$primary-color: #ff7f11;
+$text-color: #2c2f2e;
+$small-text: 'Montserrat';
+$heading: 'Poppins';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+}
+
+footer {
+	font-family: 'playfair display ';
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	// height: 10vh;
+
+	// HEADING
+	h2 {
+		background-color: #484848;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 80px;
+		padding: 10px 50px;
+
+		outline: 2px solid #fff;
+		outline-offset: -5px;
+
+		height: 100%;
+		margin-left: 50px;
+	}
+
+	ul {
+		display: flex;
+		gap: 1rem;
+		margin-right: 80px;
+
+		li {
+			list-style: none;
+
+			a {
+				text-decoration: none;
+				font-family: $heading;
+				color: #5e5d5d;
+				padding: 0 14px;
+
+				&:hover {
+					color: #754ef9;
+				}
+			}
+		}
+	}
+}
+
+main {
+	height: auto;
+	background-color: #f5f4fb;
+	.main-sec {
+		background-color: $primary-color;
+		opacity: 0.9;
+		height: 85%;
+		width: 96%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+
+		font-family: 'playfair display';
+
+		.div-1 {
+			width: 50%;
+			height: 80%;
+			display: flex;
+
+			justify-content: center;
+			align-items: center;
+
+			.sub-div-1 {
+				width: auto;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+				gap: 30px;
+			}
+
+			h2 {
+				color: #fff;
+				// text-align: center;
+				font-size: 6rem;
+				text-transform: uppercase;
+				font-family: 'roboto', sans-serif;
+				line-height: 1.3;
+
+				span {
+					transition: 0.5s;
+				}
+
+				&:hover span {
+					color: #484848;
+				}
+			}
+
+			p {
+				font-size: 1.5rem;
+				color: $text-color;
+			}
+			button {
+				padding: 11px 50px;
+				background-color: #2c2f2e;
+
+				font-size: 14px;
+				font-weight: 500;
+
+				text-align: center;
+				text-transform: uppercase;
+				cursor: pointer;
+				margin-right: 120px;
+				margin-top: 20px;
+				border: none;
+				outline: 2px solid $primary-color;
+				outline-offset: -0.2rem;
+
+				color: #fff;
+
+				transition: ease-in-out 0.5s;
+			}
+
+			button:hover {
+				background-color: #fff;
+				color: #1e1e1e;
+				transition: ease-in 0.15s;
+			}
+		}
+		.div-2 {
+			width: 50%;
+			height: 80%;
+
+			background: url(./b8b7faa068cb612f21a7f7268313064b.png) no-repeat center
+				center/cover;
+			outline: 4px solid $primary-color;
+			outline-offset: -0.5rem;
+		}
+	}
+}
+
+#skills {
+	background-color: #f5f4fb;
+	font-size: 50px;
+	color: #1b1b1b;
+
+	padding: 4rem 0;
+	height: 100vh;
+
+	.container {
+		width: 100%;
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 0 15px;
+		height: 100%;
+
+		.upper-text {
+			width: 80%;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 15px;
+
+			h2 {
+				font-family: 'Poppins', sans-serif;
+				font-size: 3rem;
+				font-weight: 800;
+				line-height: 1;
+				color: $text-color;
+			}
+
+			p {
+				color: #929292;
+				font-size: 1rem;
+			}
+		}
+
+		.my-skills {
+			padding: 6rem 0 0;
+
+			display: flex;
+			justify-content: space-between;
+
+			//    SKILLS-INDEX
+			.skills-index {
+				padding-right: 4rem;
+				max-width: 50%;
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-evenly;
+				gap: 60px;
+
+				.fa,
+				.fas {
+					font-weight: 900;
+					font-size: 50px;
+					color: $primary-color;
+
+					display: inline-block;
+					font-style: normal;
+					font-variant: normal;
+					text-rendering: auto;
+					line-height: 1;
+				}
+
+				.text {
+					font-size: 2rem;
+					font-family: 'Poppins';
+
+					h5 {
+						font-weight: 700;
+						color: #484848;
+						font: 3rem;
+					}
+
+					p {
+						font-family: $small-text;
+						font-size: 14px;
+						color: #767196;
+						font-weight: 400;
+						line-height: 1.5;
+					}
+				}
+
+				.rows {
+					display: flex;
+					justify-content: space-between;
+					gap: 30px;
+					align-items: flex-start;
+				}
+			}
+
+			.skills-chart {
+				max-width: 50%;
+				font-size: 1rem;
+				flex: 0 0 50%;
+
+				position: relative;
+				width: 100%;
+				padding-right: 15px;
+				padding-left: 15px;
+
+				.skillbar {
+					position: relative;
+					display: block;
+					margin-bottom: 20px;
+					width: 100%;
+					background: #fff;
+					height: 35px;
+					border-radius: 3px;
+
+					.skillbar-title {
+						background: #d35400;
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 110px;
+						font-weight: bold;
+						font-size: 13px;
+						color: #ffffff;
+
+						border-top-left-radius: 3px;
+						border-bottom-left-radius: 3px;
+
+						span {
+							display: block;
+							font-family: $heading;
+							color: #ffffff;
+							background: rgba(0, 0, 0, 0.1);
+							padding: 0 20px;
+							height: 35px;
+							line-height: 35px;
+						}
+					}
+
+					.skill-bar {
+						background: rgb(230, 126, 34) none repeat scroll 0% 0%;
+						width: 70%;
+						height: 100%;
+					}
+
+					.skill-bar-percent {
+						position: absolute;
+						right: 10px;
+						top: 0;
+						font-size: 11px;
+						height: 35px;
+						line-height: 35px;
+						color: #ffffff;
+						color: rgba(0, 0, 0, 0.4);
+					}
+				}
+			}
+		}
+	}
+}
+
+.contact-sec {
+	background: url(./bg.jpg) no-repeat center center/cover;
+	// background-color: #212529;
+
+	max-width: 95%;
+	margin: 0 auto;
+	padding: 5rem 0;
+	border-radius: 10px;
+
+	.container {
+		display: flex;
+		justify-content: center;
+
+		.profile-card {
+			text-align: center;
+			width: 400px;
+			border-radius: 8px;
+			overflow: hidden;
+
+			.card-header {
+				background-color: #fff;
+				padding: 60px 40px;
+
+				.pic {
+					display: inline-block;
+					padding: 8px;
+					background: linear-gradient(130deg, #fff, $primary-color);
+					border-radius: 50%;
+					margin: auto;
+					animation: animated-gradient 2s linear infinite;
+					background-size: 200% 200%;
+					margin-bottom: 40px;
+
+					img {
+						display: block;
+						width: 120px;
+						height: 120px;
+						border-radius: 50%;
+					}
+				}
+
+				.name {
+					color: $text-color;
+					font-size: 28px;
+					font-weight: bold;
+					font-family: 'Montserrat';
+					margin-top: 10px 0;
+				}
+
+				.description {
+					font-size: 16px;
+					color: $primary-color;
+					margin-top: 12px;
+					font-family: 'montserrat';
+				}
+
+				.icons {
+					display: flex;
+					justify-content: center;
+					margin: 20px 0;
+
+					a {
+						color: $text-color;
+						width: 56px;
+						font-size: 22px;
+						text-decoration: none;
+						transition: 0.3s linear;
+
+						&:hover {
+							color: #e66767;
+						}
+					}
+				}
+
+				.contact-button {
+					display: inline-block;
+					padding: 12px 50px;
+					color: $primary-color;
+					border: 2px solid $primary-color;
+					text-decoration: none;
+					border-radius: 6px;
+					margin-top: 16px;
+
+					transition: 0.3s linear;
+
+					&:hover {
+						background-color: #e66767;
+						color: #f2f2f2;
+					}
+				}
+			}
+		}
+	}
+}
